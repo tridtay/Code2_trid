@@ -1,5 +1,5 @@
 # SystemArchitectureDiagram
-[SystemArchitectureDiagram drawio (2)](https://user-images.githubusercontent.com/93904514/159162938-23dc6c70-1982-4ea9-a70e-f0134aa7a48c.png)
+![SystemArchitectureDiagram drawio (4)](https://user-images.githubusercontent.com/93904514/159172266-2f155545-7166-4ad1-8f0e-2761334744fe.png)
 - งานนี้มีทั้งหมด5ระบบ
   1.  RTCS
       - 5 serviceย่อย
@@ -43,6 +43,8 @@
       
  ### ระบบที่ไม่ได้ทำแต่ออกแบบไว้
  - System Performance
+  - Kubernetes 
+		  - ง่ายต่อการhealth check และ deployment
   - Asynchronous
     - Rabbit Mq 
       - วางแผนเเพื่อที่จะมาทำqueue ในส่วนของ การจัดกาเร่่องการเงิน balanceต่างๆ FIFO
@@ -67,3 +69,10 @@
       -  kibana
         - monitor log
     - ใช้ log กับ tacing ร่วมกัน เพื่อแก้ไขปัญหาcentralized log  โดยการ add UUID เพื่อตามติด log ได้
+    - Prometheus
+      - ฐานข้อมูลสำหรับตัว grafana ทำหน้าที่ดึงข้อมูลจาก Exporter แต่ละตัวอีกที
+    - Grafana 
+      - Dashboard แสดงข้อมูล Hardware จากฐานข้อมูลที่ดึงมาในรูป นำมาแสดงในรูปแบบกราฟต่างๆ 
+
+
+
